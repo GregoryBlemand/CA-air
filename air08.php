@@ -43,6 +43,10 @@ function sorted_insert(array $array, int $new_element)
         $newArray[] = $array[$i];
     }
 
+    if (!$inserted) {
+        $newArray[] = $new_element;
+    }
+
     return $newArray;
 }
 
