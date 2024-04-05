@@ -49,7 +49,7 @@ if ($argc > 3) {
 }
 
 if (strlen($argv[1]) > 1) {
-    print "Erreur : le caractère à duppliquer est trop long.\n";
+    print "Erreur : le caractère à dupliquer est trop long.\n";
     exit;
 }
 
