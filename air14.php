@@ -169,7 +169,7 @@ class assertions
 
     public $returnList = [];
 
-    public function test(string $index) {
+    public function executeTests(string $index) {
         // vérifier si index existe
         if (!isset($this->asserts[$index])) {
             return;
@@ -205,7 +205,7 @@ $assertion = new assertions();
 
 foreach ($fileList as $file) {
     $index = str_replace('.php', '', $file);
-    $assertion->test($index);
+    $assertion->executeTests($index);
 }
 
 /* affichage */
